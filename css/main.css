@@ -1,0 +1,49 @@
+
+/*the code for doing a linear gradient has been commented out. Remove the brackets to see demonstration of the image vs. the gradient*/
+.profile-box {
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/header-img2.jpg);
+	/*-line of code provides the linear-gradient.
+	background: linear-gradient(#eb5757, #d59152 500px); 
+	-to control the direction of the gradient, remove the 45deg, and it defaults to vertical, also the order of the colors will change the direction of the fade.
+	-line of code is for radial-gradient example.
+	background-image: radial-gradient(#eb5757, #d59152);*/
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border: 10px solid white;
+	padding: 10px;
+	background-clip: padding-box;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	position: relative;
+	box-shadow: inset 0 -.5em .5em rgba(0,0,0, 0.3);
+}
+
+.profile-photo {
+	width: 160px;
+	min-height: 200px;
+	position: absolute;
+	bottom: -60px;/*this alters the ampount of drop the box has below the header image*/
+	left: 5%;/*alters the positioning from the left that the profile-photo box appears in relation to the left margin of the page*/ 
+	background-color: #D5CCCC;
+	border: 3px solid white;
+	border-radius: .5em;
+	box-shadow: .25em .25em .5em rgba(0, 0, 0, .3);
+}
+
+.username {
+	font-size: 15px;
+	text-align: center;
+}
+
+
+/*Code alters the embeded profile-picture to make it responsive to the box that it lives in.*/
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
